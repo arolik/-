@@ -49,7 +49,7 @@ body {
     border:1px solid white;
     border-radius: 50px;
 }
-h1 {
+.main-heading {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300 ;
     text-transform: uppercase;
@@ -135,6 +135,7 @@ h1 {
     max-height:620px;
     background:#f3f3f3;
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 .details-about-bouncy-head {
     font-family: 'Source Sans Pro', sans-serif;
@@ -143,7 +144,6 @@ h1 {
     font-size: 20px;
     letter-spacing: 9px;
     margin-bottom: 45px;
-    
     color:#333b46;
     text-align:center;
 }
@@ -156,14 +156,127 @@ h1 {
     margin-bottom: 60px;
     text-align:center;
 }
-.details-about-bouncy-tabs {
-    margin:0 auto;
-    max-width:400px;
+.details-about-bouncy-icons {
+    max-width:225px;
     display:flex;
-    flex-direction: row;
+    justify-content: space-around;
+    margin:0 auto;
+    margin-bottom: 60px;
+}
+.details-about-bouncy-icons-bg {
+    background-color:#81868e;
+    width:55px;
+    height: 55px;
+    border-radius:50px;
+}
+.details-about-bouncy-icons-bg:hover {
+    background-color:#19bd9a;
+    cursor:pointer;
+}
+.details-about-bouncy-icons-bg:nth-child(1){
+    background-image: url(../images/icon1.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center center;
+}
+.details-about-bouncy-icons-bg:nth-child(2){
+    background-image: url(../images/icon2.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center center;
+}
+.details-about-bouncy-icons-bg:nth-child(3){
+    background-image: url(../images/icon3.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center center;
+}
+.creative-ideas {
+    max-width:967px;
+    display: flex;
+    margin:0 auto;
     justify-content: space-around;
 }
+.creative-ideas-left-block {
+    margin-right: 120px;
+}
+.creative-ideas-left-block-head {
+    font-size:16px;
+    font-weight: 400;
+    color:#464646;
+    margin-bottom: 40px;
+}
+.creative-ideas-left-block-text {
+    font-weight: 400;
+    color:#81868e;
+    line-height: 2;
+}
+.creative-ideas-right-block-text {
+    margin-top: 56px;
+    font-weight: 400;
+    color:#81868e;
+    line-height: 2;
+}
+.featured-projects {
+    padding-top: 100px;
+}
+.featured-projects-head {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 9px;
+    margin-bottom: 45px;
+    color:#333b46;
+    text-align:center;
+}
+.featured-projects-text {
+    max-width:470px;
+    font-weight: 400;
+    line-height: 2;
+    color:#81868e;
+    margin:0 auto;
+    margin-bottom: 60px;
+    text-align:center;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .details-about-bouncy-tabs-elem {
     width:55px;
     height:55px;
@@ -192,6 +305,10 @@ h1 {
     background-size:auto;
     background-position: center center;
 }
+*/
+
+
+
 
 
 
