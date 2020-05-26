@@ -379,45 +379,251 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 120px;
+}
+.list-services {
+    width:50%;
 }
 
-.list-services {
-    list-style-type: none;
-}
-.list-services li {
+.list-services-elem {
     background-color: #81868e;
     width: 55px;
     height: 55px;
     border-radius: 50px;
     margin-top: 17px;
 }
-.list-services li:hover  {
+.list-services-elem:hover  {
     background-color: #19bd9a;
 }
-.list-services li:nth-child(1){
+.list-services-elem:hover  .list-services-elem-description {
+    display:block;
+}
+.list-services-elem:nth-child(1){
     background-image:url(../images/repair.png);
     background-position: center center;
     background-repeat:no-repeat;
     background-size:auto;
 }
-.list-services li:nth-child(2){
+.list-services-elem:nth-child(2){
     background-image:url(../images/design.png);
     background-position: center center;
     background-repeat:no-repeat;
     background-size:auto;
 }
-.list-services li:nth-child(3){
+.list-services-elem:nth-child(3){
     background-image:url(../images/joystik.png);
     background-position: center center;
     background-repeat:no-repeat;
     background-size:auto;
 }
-.list-services li:nth-child(4){
+.list-services-elem:nth-child(4){
     background-image:url(../images/socket.png);
     background-position: center center;
     background-repeat:no-repeat;
     background-size:auto;
 }
+.list-services-elem {
+    position:relative;
+}
+.description_1{
+    position:absolute;
+    z-index:20;
+    top:0;
+    left:100px;
+    width:400px;
+    display:none;
+}
+.description_2{
+    position:absolute;
+    z-index:20;
+    top:-72px;
+    left:100px;
+    width:400px;
+    display:none;
+}
+.description_3{
+    position:absolute;
+    z-index:20;
+    top:-144px;
+    left:100px;
+    width:400px;
+    display:none;
+}
+.description_4{
+    position:absolute;
+    z-index:20;
+    top:-216px;
+    left:100px;
+    width:400px;
+    display:none;
+}
+
+.list-services-elem-description-head {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color:#333b46;
+    text-align:left;
+}
+.list-services-elem-description-text {
+    line-height: 2;
+    color:#81868e;
+    margin-bottom: 40px;
+    text-align:left;
+}
+
+/* */
+
+.graphics {
+    width:50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+.graphics div p {
+    text-align: center;
+    margin-top: 23px;
+    font-weight: 400;
+    color:#81868e;
+}
+
+/**/
+
+.impressed {
+    height:350px;
+    background-image:url(../images/impressedbg.png);
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:#A9A9A9;
+    background-blend-mode:luminosity;
+}
+.impressed:hover {
+    background-blend-mode:normal;
+    background-color:#fff;
+}
+.impressed-wrapper {
+    padding-top: 80px;
+    max-width:1170px;
+    margin:0 auto;
+    position:relative;
+}
+.impressed-head {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 9px;
+    margin-bottom: 60px;
+    color:#f3f3f3;
+    text-align:left;
+}
+.impressed-text {
+    max-width:600px;
+    font-weight: 400;
+    line-height: 2;
+    color:#81868e;
+    margin-bottom: 35px;
+    text-align:left;
+}
+.impressed-contact-name,
+.impressed-contact-position {
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#81868e;
+    text-decoration: none;
+}
+.impressed-contact-name:hover {
+    color:#fff;
+}
+.impressed-contact-position-link {
+    color:#1aa88a;
+}
+.impressed-contact-position-link:hover {
+    color:#fff;
+}
+.impressed-block {
+    position:absolute;
+    top:-50%;
+    left:50%;
+    width:auto;
+    height:auto;
+}
+
+/* portfolio */
+
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color:#f3f3f3;
+}
+.portfolio-head {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 9px;
+    margin-bottom: 45px;
+    color:#333b46;
+    text-align:center;
+}
+.portfolio-text {
+    max-width:470px;
+    font-weight: 400;
+    line-height: 2;
+    color:#81868e;
+    margin:0 auto;
+    margin-bottom: 80px;
+    text-align:center;
+}
+.portfolio-main-block {
+    max-width:1110px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+.portfolio-main-block-menu {
+    display:inline-flex;
+    justify-content: space-evenly;
+}
+.portfolio-menu-link {
+    text-decoration:none;
+    color:#464646;
+}
+.portfolio-menu-link:after {
+    content: '';
+    display: none;
+    height: 1px;
+    width: 38px;
+    background: #19bd9a;
+    margin: 0 auto;
+    margin-top: 15px;
+    box-shadow:0px 1px 0px 0px #8ddac9;
+}
+.portfolio-menu-link:hover:after{
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
