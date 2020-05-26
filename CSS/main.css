@@ -592,12 +592,14 @@ body {
 .portfolio-menu-link {
     text-decoration:none;
     color:#464646;
+    box-sizing: border-box;
+    height:38px;
 }
 .portfolio-menu-link:after {
     content: '';
-    display: none;
+    display:none;
     height: 1px;
-    width: 38px;
+    width: 34px;
     background: #19bd9a;
     margin: 0 auto;
     margin-top: 15px;
@@ -607,6 +609,12 @@ body {
     display:block;
 }
 
+.grid {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
 
 
 
